@@ -1,6 +1,7 @@
 import psycopg2
 import getpass
 
+
 def connectToDB():
     hostname = raw_input("Please enter hostname:") or 'localhost'
     dbname = raw_input("Please enter DB name:") or 'testdb'
