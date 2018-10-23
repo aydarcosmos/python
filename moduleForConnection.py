@@ -9,9 +9,8 @@ def connectToDB():
 
     conn_string = "host='{0}' dbname='{1}' user='{2}' password='{3}'".format(hostname, dbname, username, password) 
     connectionName = psycopg2.connect(conn_string)
-    cursor = connectionName.cursor()
-    print(conn_string)
-    cursor.execute('SELECT * from testtable')    
-    infoFromDB = cursor.fetchall() 
-    print(infoFromDB) 
-connectToDB()
+    #print(conn_string)
+    #cursor.execute('SELECT * from testtable')    
+    #infoFromDB = cursor.fetchall() 
+    #print(infoFromDB) 
+    return connectionName

@@ -2,13 +2,13 @@ import psycopg2
 
 import moduleForConnection
 
-connectToDB()
+conn =  moduleForConnection.connectToDB()
 
 #conn_string = "host='localhost' dbname='testdb' user='gumer' password='aidar'" #connection parameters
 
 #conn = psycopg2.connect(conn_string)
 
-#cursor = conn.cursor()
+cursor = conn.cursor()
 
 tableName = raw_input("Please enter tible name:")
 
