@@ -1,5 +1,6 @@
 import psycopg2
 import pprint
+import os
 
 conn_string = "host='localhost' dbname='testdb' user='gumer' password='aidar'"
 
